@@ -1,3 +1,274 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Cinzel', serif;
+  
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+
+}
+
+#background-video {
+  position: fixed;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  align-items: center;
+  
+}
+
+main h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  font-size: 40px;
+  color: white;
+  text-shadow: 2px 2px 5px #511ab7;
+ }
+
+/* Temporary NAVBAR START*/
+header {
+width: 100vw;
+height: 100%;
+display: flex;
+justify-content: center;
+
+
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+  width: 80%;
+  height: 100px;
+  margin-top:2%;
+  
+  
+  border-radius: 50px;
+
+  background-color: rgba(39, 37, 37, 0.4);
+  box-shadow: 0px 0px 15px #511ab7;
+}
+
+.navbar ul {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  list-style: none;
+
+  position: absolute;
+  
+  
+
+}
+
+.navbar li {
+  margin: 2%;
+  font-size: 28px;
+  font-weight: 700px;
+  
+  color: white;
+
+  text-shadow: 1px 1px 2px #511ab7;
+}
+
+.navbar li:hover {
+  color: #511ab7;
+
+  transition: 1s;
+  transform: translateY(5px);
+  text-shadow: 1px 1px 2px white;
+  cursor: pointer;
+  
+}
+
+/*Temporary NAVBAR END*/
+
+
+
+/* FADEIN MAIN START*/
+main {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+/* FADEIN MAIN END*/
+
+/*TEAM SECTION START*/
+.team-container {
+  height: 100vh;
+  max-height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  
+  
+  background-color: rgba(39, 37, 37, 0.6);
+  box-shadow: 0px 0px 50px #511ab7;
+  margin-top: 3%;
+  
+}
+
+.team-container img {
+  width: 400px;
+  height: 500px;
+  border: solid black;
+  object-fit: cover;
+  
+}
+
+.overlay-content {
+  width: 600px;
+  height: 500px;
+  position: absolute;
+  color: white;
+  display: inline-block;
+  top: 20px;
+  left: 30px;
+  opacity: 0%; 
+  transform: translateX(-300px);
+  
+  
+}
+
+.overlay-content:hover {
+  opacity: 100%;
+  transform: translateX(0px);
+  transition: 2.5s ease-in-out;
+}
+
+.overlay-content ul {
+  list-style: none;
+
+}
+
+.overlay-content li {
+  font-size: 30px;
+  margin-top: 10px;
+  font-family: sans-serif;
+  text-shadow: 1px 1px 2px #511ab7;
+}
+
+.overlay-social ul {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 265px;
+  align-items: center;
+
+
+}
+
+.overlay-social li:hover {
+  transition: 0.5s ease-in-out;
+  transform: rotate(360deg);
+}
+
+.email-overlay {
+  font-size: 20px;
+  margin-top: 100px;
+  font-family: sans-serif;
+  text-shadow: 1px 1px 2px #511ab7;
+  letter-spacing: 1px;
+}
+
+.team-member1,
+.team-member2,
+.team-member3,
+.team-member4 {
+  position: relative;
+  overflow: hidden;
+}
+
+.team-member1:hover::before,
+.team-member2:hover::before,  
+.team-member3:hover::before,  
+.team-member4:hover::before {
+
+  position: absolute;
+  height: 500px;
+  width: 400px;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0, 0.8);
+  line-height: 100px;
+  text-align: center;
+
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: bolder;
+  color: white;
+  animation: effect 2s cubic-bezier(.5,.01,.5,.99);
+}
+
+@keyframes effect {
+  0%{
+    width: 0px;
+  }
+  100%{
+    width: 400px;
+  }
+}
+
+.team-member1:hover::before{
+  content: "";  
+}
+.team-member2:hover::before{
+  content: ""; 
+}
+.team-member3:hover::before{
+  content: "";
+  
+}
+.team-member4:hover::before{
+  content: "";
+  
+}
+
+/*TEAM SECTION END*/
+
+/* Section 2 START*/
+.container-aboutus {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.about-box {
+  width: 50%;
+  height: auto;
+  margin-top: 10px; 
+}
+
+/* Section 2 END*/
 
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap');
 
