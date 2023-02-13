@@ -32,6 +32,16 @@ body {
   
 }
 
+main h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  font-size: 40px;
+  color: white;
+  text-shadow: 2px 2px 5px #511ab7;
+ }
+
 /*
 .background-video-shadow {
   height: 100%;
@@ -66,8 +76,6 @@ justify-content: center;
 
   background-color: rgba(39, 37, 37, 0.4);
   box-shadow: 0px 0px 15px #511ab7;
-
-  position: fixed;
 }
 
 .navbar ul {
@@ -77,6 +85,8 @@ justify-content: center;
   align-items: center;
   
   list-style: none;
+
+  position: absolute;
   
   
 
@@ -100,6 +110,7 @@ justify-content: center;
   transition: 1s;
   transform: translateY(5px);
   text-shadow: 1px 1px 2px white;
+  cursor: pointer;
   
 }
 
@@ -108,104 +119,121 @@ justify-content: center;
 /*TEAM SECTION START*/
 
 .team-container {
-  position:relative;
-  width: 100%;
-  height: 100%;
-  min-height: 400px;
-  max-height: 400px;
-  padding: 20px;
+  height: 100vh;
+  max-height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  
+  
   background-color: rgba(39, 37, 37, 0.4);
   box-shadow: 0px 0px 50px #511ab7;
-  margin-top: 10%;
-  
-}
-
-.team-container2 {
-  position:absolute;
-  width: 100%;
-  
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
- 
-  background-color: rgba(255, 255, 255, 0);
-  box-shadow: 0px 0px 10px #ff16f3;
-  z-index: -1;
-}
-
-.team-container h2 {
-  display: flex;
-  font-size: 42px;
-  margin-bottom: 170px;
-  color: rgb(255, 255, 255);
-  text-shadow: 2px 2px 5px #511ab7;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.team-container h3 {
-  font-size: 28px;
-
-  color: white;
-  
+  margin-top: 3%;
   
 }
 
 .team-container img {
-margin-bottom: 50px;
-border: solid black;
-box-shadow: 0px 0px 10px #511ab7;
-}
-
-.team-sidebar {
-  position: absolute;
-  top: 0;
-  right: -200px;
-  width: 200px;
-  height: 100%;
-  background-color: #333;
-  color: #fff;
-  transition: right 0.5s ease-out;
-  padding: 20px;
-  box-sizing: border-box;
-  
-}
-
-.team-container img:hover  {
   width: 400px;
-  height: 600px;
-  transition: 1s;
-  border-bottom: 1px solid black;
-  right: 0;
+  height: 500px;
+  border: solid black;
+  box-shadow: 0px 0px 10px #511ab7;
+  object-fit: cover;
   
 }
 
-.container:hover .team-sidebar img  {
-  width: 200px;
-  height: 600px;
-  transition: 1s;
-  border-bottom: 1px solid black;
+.overlay-content {
+  width: 700px;
+  height: 500px;
+  position: absolute;
+  color: white;
+  display: inline-block;
+  top: 20px;
+  left: 30px;
+  opacity: 0%; 
+  transform: translateX(-300px);
   
   
 }
 
+.overlay-content:hover {
+  opacity: 100%;
+  transform: translateX(0px);
+  transition: 2.5s ease-in-out;
+}
 
-
-
-.team-list {
-display: flex;
-flex-wrap: wrap;
-transform: translateY(-150px);
+.overlay-content ul {
+  list-style: none;
 
 }
 
-.team-member {
-width: 25%;
-text-align: center;
-
+.overlay-content li {
+  font-size: 20px;
+  margin-top: 10px;
+  font-family: sans-serif;
+  text-shadow: 1px 1px 2px #511ab7;
 }
+
+.team-member1,
+.team-member2,
+.team-member3,
+.team-member4 {
+  position: relative;
+  overflow: hidden;
+}
+
+.team-member1:hover::before,
+.team-member2:hover::before,  
+.team-member3:hover::before,  
+.team-member4:hover::before {
+
+  position: absolute;
+  height: 500px;
+  width: 400px;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0, 0.8);
+  line-height: 100px;
+  text-align: center;
+
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: bolder;
+  color: white;
+  animation: effect 2s cubic-bezier(.5,.01,.5,.99);
+}
+
+.team-member1:hover::before{
+  
+  content: "";
+  
+  
+}
+
+.team-member2:hover::before{
+  content: "";
+  
+}
+
+.team-member3:hover::before{
+  content: "";
+  
+}
+
+.team-member4:hover::before{
+  content: "";
+  
+}
+
+@keyframes effect {
+  0%{
+    width: 0px;
+  }100%{
+    width: 400px;
+  }
+}
+    
+
 
 /*TEAM SECTION END*/
 
@@ -220,18 +248,7 @@ text-align: center;
 .about-box {
   width: 50%;
   height: auto;
-  margin-top: 10px;
-
-  
-}
-
-
-audio {
-width: 100%;
-max-width: 250px;
-justify-content: center;
-align-items: center;
-height: 210px;
+  margin-top: 10px; 
 }
 
 
