@@ -8,6 +8,16 @@ body {
   width: 100%;
   height: 100%;
   font-family: 'Cinzel', serif;
+  
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
 }
 
 #logo {
@@ -27,8 +37,6 @@ body {
   z-index: -1;
   object-fit: cover;
   align-items: center;
-  
-  box-shadow:  inset -5px 26px 300px 59px rgba(0,0,0,0.7);
   
 }
 
@@ -118,6 +126,25 @@ justify-content: center;
 
 /*TEAM SECTION START*/
 
+/* FADEIN MAIN START*/
+main {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+/* FADEIN MAIN END*/
+
 .team-container {
   height: 100vh;
   max-height: 50vh;
@@ -144,7 +171,7 @@ justify-content: center;
 }
 
 .overlay-content {
-  width: 700px;
+  width: 600px;
   height: 500px;
   position: absolute;
   color: white;
@@ -169,10 +196,32 @@ justify-content: center;
 }
 
 .overlay-content li {
-  font-size: 20px;
+  font-size: 30px;
   margin-top: 10px;
   font-family: sans-serif;
   text-shadow: 1px 1px 2px #511ab7;
+}
+
+.overlay-social ul {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 265px;
+  align-items: center;
+
+
+}
+
+.overlay-social li:hover {
+  transition: 0.5s ease-in-out;
+  transform: rotate(360deg);
+}
+
+.email-overlay {
+  font-size: 20px;
+  margin-top: 100px;
+  font-family: sans-serif;
+  text-shadow: 1px 1px 2px #511ab7;
+  letter-spacing: 1px;
 }
 
 .team-member1,
@@ -228,7 +277,8 @@ justify-content: center;
 @keyframes effect {
   0%{
     width: 0px;
-  }100%{
+  }
+  100%{
     width: 400px;
   }
 }
