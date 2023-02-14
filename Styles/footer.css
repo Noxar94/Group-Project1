@@ -5,6 +5,7 @@
 }
 
 .footer-container {
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,6 +21,7 @@
   height: 10vh;
   background-color: rgb(0, 0, 0,0.1);
   bottom: 0;
+  
 }
 
 .footer-list {
@@ -28,11 +30,13 @@
   color: white;
   padding-left: 10%;
   padding-right: 10%;
+  
 }
 
 
 .footer-list ul {
   list-style: none;
+  
   
   
 
