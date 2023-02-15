@@ -1,3 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
 html {
     display: flex;
     justify-content: center;
@@ -10,7 +16,7 @@ body {
     --transparent-background: linear-gradient(to right,rgba(27, 253, 156, 0.1),transparent,transparent,rgba(27, 253, 156, 0.1));
     --purple-transparent: rgba(81, 26, 183, 0.4);
     font-family: 'Roboto Mono', monospace;
-    margin: 20px;
+    margin: 0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -38,31 +44,30 @@ video {
   main {
       display: flex;
   }
-  
+
   .icons-container {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      margin: 40px;
-  }
-  
-  /*Icons*/
-  .icons-container i {
-      color: var(--green);
-      font-size: 40px;
-      padding: 10px;
-  }
-  
-  .icons-container i:hover {
-      color: var(--purple-transparent);
-  }
-  
-  .icons-container i:active {
-      transform: scale(0.9);
-  }
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 40px;
+}
+
+.icons-container i {
+    color: var(--green);
+    font-size: 40px;
+    padding: 10px;
+}
+
+.icons-container i:hover {
+    color: var(--purple-transparent);
+}
+
+.icons-container i:active {
+    transform: scale(0.9);
+}
   
   /*Logo*/
   .logo {
