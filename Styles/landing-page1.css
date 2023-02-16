@@ -59,6 +59,7 @@ video {
     color: var(--green);
     font-size: 40px;
     padding: 10px;
+    -webkit-text-stroke: 1px var(--main-color);
 }
 
 .icons-container i:hover {
@@ -74,16 +75,26 @@ video {
       font-family: 'Orbitron', sans-serif;
       font-size: 4em;
       font-weight: 700;
-      border: 4px solid;
-      opacity: 0.8;
+      border: 2px solid var(--green);
       border-radius: 0.6em;
       padding: 10px;
-      color: var(--green);
+      color: var(--main-color);
       background: linear-gradient(to right,rgba(27, 253, 156, 0.1),transparent,transparent,rgba(27, 253, 156, 0.1));
       box-shadow: 0 0 10px rgba(27, 253, 114, 0.6), 0 0 9px 3px rgba(27, 253, 196, 0.2);
-      background-color: var(--purple-transparent);;
+      background-color: var(--purple-transparent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
   }
-  
-  h2 {
-      margin: 0;
+
+  img {
+      width: 70%;
+      height: auto;
+      max-width: 70%;
+  }
+
+  p {
+    text-shadow: 1px 1px var(--main-color);
+    color: var(--green);
   }
