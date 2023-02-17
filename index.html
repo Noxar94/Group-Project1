@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="/Styles/landing-page1.css">
   <link rel="stylesheet" href="/Styles/navbar.css">
   <link rel="icon" type="image/x-icon" href="/Pictures/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <!--<link rel="stylesheet" href="/Styles/footer.css">-->
   <meta charset="UTF-8">
@@ -13,7 +14,7 @@
   <title>4 on the floor</title>
 </head>
 <body>
- <video src="videos/tunnel.mp4" autoplay muted loop></video> 
+<video src="videos/gaming.mp4" autoplay muted loop></video>
   <header>
     <nav>
       <div class="barname-url">
@@ -27,7 +28,7 @@
       </ul>
     </nav>
   </header>
-  <section>
+  <section class="s1">
     <div class="icons-container">
       <a href="https://www.tiktok.com" target="_blank">
           <i class='bx bxl-tiktok'></i>
@@ -39,11 +40,41 @@
           <i class='bx bxl-reddit'></i>
       </a>
   </div>
-    <div class="logo">
+    <div class="logo-container">
       <p>4 on the floor</p>
-        <img src="logos/robotlogo.png" alt="">
-        <p>Gaming Bar</p>
+      <p>Gaming Bar</p>
     </div>
+    <div>
+      <button class="res-btn animate__animated animate__pulse animate__infinite"><a href="#form">Make a reservation</a></button>
+    </div>
+  </section>
+  <section>
+    <form id="form">
+        <div class="input-container">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="input-container">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        </div>
+        <div class="input-container">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="6" cols="30" required></textarea>
+        </div>
+        <div class="input-box">
+          <label for="guests">Number of guests</label>
+          <select name="guests" id="guests">
+              <option value="" selected disabled>Select</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+          </select>
+      </div>
+        <button type="submit" value="Send">Make Reservation</button>
+      </form>
   </section>
 <!--
   <footer class="footer-container">
@@ -85,5 +116,6 @@
   
   </footer>
 -->
+<script src="js/smooth-scroll.js"></script>
 </body>
 </html>

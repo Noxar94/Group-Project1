@@ -7,7 +7,6 @@
 html {
     display: flex;
     justify-content: center;
-    height: 100vh;
 }
 
 body {
@@ -23,27 +22,38 @@ body {
     align-items: center;
 }
 
-video {
-    position: absolute;
+video{
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
     z-index: -1;
+  
+  }
+
+  p {
+    text-shadow: 1px 1px var(--main-color);
+    color: var(--green);
   }
   
-  section {
+  .s1 {
       display: flex;
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 100vh;
+      height: 90vh;
+      flex-direction: column;
   }
-  
-  main {
-      display: flex;
+
+  .s2 {
+    display: flex;
+    height: 100%;
+    width: 100%;
   }
+
+  /*----------------ICONS---------------*/
 
   .icons-container {
     display: flex;
@@ -70,31 +80,130 @@ video {
     transform: scale(0.9);
 }
   
-  /*Logo*/
-  .logo {
+ /*----------------LOGO---------------*/
+  .logo-container {
       font-family: 'Orbitron', sans-serif;
-      font-size: 4em;
-      font-weight: 700;
-      border: 2px solid var(--green);
-      border-radius: 0.6em;
-      padding: 10px;
-      color: var(--main-color);
-      background: linear-gradient(to right,rgba(27, 253, 156, 0.1),transparent,transparent,rgba(27, 253, 156, 0.1));
-      box-shadow: 0 0 10px rgba(27, 253, 114, 0.6), 0 0 9px 3px rgba(27, 253, 196, 0.2);
-      background-color: var(--purple-transparent);
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
+      max-width: 400px;
+      width: 100%;
+      height: 260px;
+    
+/*
+      padding: 10px;
+      color: var(--main-color);
+      border-radius: 10px;
+      background: linear-gradient(to right,rgba(27, 253, 156, 0.1),transparent,transparent,rgba(27, 253, 156, 0.1));
+      box-shadow: 0 0 10px rgba(27, 253, 114, 0.6), 0 0 9px 3px rgba(27, 253, 196, 0.2);
+      background-color: var(--purple-transparent);
+*/
   }
 
-  img {
-      width: 70%;
-      height: auto;
-      max-width: 70%;
-  }
+  .logo-container p {
+    font-size: 45px;
+    font-weight: 700;
+   }
 
-  p {
-    text-shadow: 1px 1px var(--main-color);
+   /*----------------RESERVATION BUTTON---------------*/
+   .res-btn {
+    font-family: 'Orbitron', sans-serif;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
     color: var(--green);
-  }
+    border: none;
+    border: 2px solid var(--green);
+    color: var(--green);
+    background: var(--purple-transparent);
+    box-shadow: inset 0 0 10px rgba(51, 241, 108, 0.795), 0 0 9px 3px rgba(150, 238, 179, 0.767);
+   }
+   .res-btn:hover {
+    cursor: pointer;
+   }
+
+   .res-btn:active {
+    transform: scale(0.95);
+   }
+
+   .res-btn a {
+    text-decoration: none;
+    color: var(--green);
+   }
+
+   
+
+   /*FORM*/
+
+form {
+    height: 500px;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    padding: 0.7em 2.7em;
+    border-radius: 0.6em;
+    border: 2px solid var(--green);
+    color: var(--green);
+    background: var(--transparent-background);
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+    margin: 40px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 6px;
+}
+
+#name {
+    background-color: var(--purple-transparent);
+    color: var(--green);
+    border-radius: 4px;
+}
+
+#lastname {
+    background-color: var(--purple-transparent);
+    color: var(--green);
+    border-radius: 4px;
+}
+
+#email {
+    background-color: var(--purple-transparent);
+    color: var(--green);
+    border-radius: 4px;
+}
+
+#message {
+    background-color: var(--purple-transparent);
+    color: var(--green);
+    border-radius: 4px;
+}
+
+button {
+    padding: 0.7em 2.7em;
+    border-radius: 0.6em;
+    border: 2px solid var(--green);
+    color: var(--green);
+    background: var(--transparent-background);
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+}
+
+button:hover{
+    color: var(--green);
+    box-shadow: inset 0 0 10px rgba(27, 253, 114, 0.6), 0 0 9px 3px rgba(27, 253, 196, 0.2);
+    background-color: var(--main-color);
+    cursor: pointer; 
+    background-color: rgba(81, 26, 183, 0.4);
+}
+
+  
+
+
+ 
