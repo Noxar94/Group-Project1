@@ -7,13 +7,16 @@
 html {
     display: flex;
     justify-content: center;
+    background-image: url(../Pictures/landing-page/gaming2.jpg);
 }
 
 body {
     --main-color: #511AB7;
     --green: #1BFD9C;
     --transparent-background: linear-gradient(to right,rgba(27, 253, 156, 0.1),transparent,transparent,rgba(27, 253, 156, 0.1));
-    --purple-transparent: rgba(81, 26, 183, 0.4);
+    --purple-transparent: rgba(81, 26, 183, 0.685);
+    --purple-transparent-dark: rgba(81, 26, 183, 0.596);
+    --green-transparent: rgba(132, 248, 157, 0.4);
     font-family: 'Roboto Mono', monospace;
     margin: 0;
     width: 100%;
@@ -22,7 +25,7 @@ body {
     align-items: center;
 }
 
-video{
+img {
     position: fixed;
     top: 0;
     left: 0;
@@ -147,7 +150,7 @@ form {
     border-radius: 0.6em;
     border: 2px solid var(--green);
     color: var(--green);
-    background: var(--transparent-background);
+    background: var(--purple-transparent-dark);
     box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
     margin: 40px;
 }
@@ -202,6 +205,27 @@ button:hover{
     cursor: pointer; 
     background-color: rgba(81, 26, 183, 0.4);
 }
+
+.input-box {
+    color: var(--green);
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.input-box-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#list {
+    background-color: var(--main-color);
+    color: var(--green);
+}
+
+
 
   
 

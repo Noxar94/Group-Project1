@@ -14,7 +14,8 @@
   <title>4 on the floor</title>
 </head>
 <body>
-<video src="videos/gaming.mp4" autoplay muted loop></video>
+<!--<video src="videos/gaming.mp4" autoplay muted loop></video>-->
+<img src="Pictures/landing-page/gaming2.jpg" alt="gaming dudes">
   <header>
     <nav>
       <div class="barname-url">
@@ -62,9 +63,10 @@
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="6" cols="30" required></textarea>
         </div>
+        <div class="input-box-container">
         <div class="input-box">
-          <label for="guests">Number of guests</label>
-          <select name="guests" id="guests">
+          <label for="players">Players</label>
+          <select name="players" id="list">
               <option value="" selected disabled>Select</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -72,7 +74,19 @@
               <option value="4">4</option>
               <option value="5">5</option>
           </select>
-      </div>
+        </div>
+        <div class="input-box">
+          <label for="consoles">Console</label>
+          <select name="consoles" id="list">
+              <option value="" selected disabled>Select</option>
+              <option value="Xbox">Xbox</option>
+              <option value="PC">PC</option>
+              <option value="Switch">Switch</option>
+              <option value="PS5">PS5</option>
+              <option value="Nintendo 64">Nintendo 64</option>
+          </select>
+        </div>
+        </div>
         <button type="submit" value="Send">Make Reservation</button>
       </form>
   </section>
