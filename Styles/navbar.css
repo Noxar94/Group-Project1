@@ -5,7 +5,6 @@ html {
     --green: #1BFD9C;
     --transparent-background: linear-gradient(to right,rgba(181, 27, 253, 0.1),transparent,transparent,rgba(163, 27, 253, 0.1));
     --purple-transparent: rgba(81, 26, 183, 0.4);
-    font-family: 'Roboto Mono', monospace;
 }
 
 header {
@@ -35,8 +34,7 @@ nav {
 
 .barname-url {
     font-size: 18px;
-    color: var(--main-color);
-    text-shadow: 0.5px 0.5px var(--green);
+    color: var(--green);
 }
 
 nav ul {
