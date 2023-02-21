@@ -55,13 +55,13 @@ nav li a {
     font-size: 15px;
     padding: 0.7em 2.7em;
     border-radius: 0.6em;
-    border: 2px solid var(--green);
+    border: 2px solid transparent;
     color: var(--green);
-    background: var(--transparent-background);
-    box-shadow: inset 0 0 10px rgba(9, 248, 81, 0.4), 0 0 9px 3px rgba(17, 235, 10, 0.1);
+   
 }
 
 nav li a:hover {
-    color: var(--green);
-    background-color: var(--purple-transparent);
+    background-color: var(--transparent-background);
+    box-shadow: inset 0 0 10px rgba(4, 230, 72, 0.795), 0 0 9px 3px rgba(27, 253, 102, 0.767);
+    border: 2px solid var(--green);
 }
