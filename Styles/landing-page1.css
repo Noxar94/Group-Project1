@@ -7,7 +7,6 @@
 html {
     display: flex;
     justify-content: center;
-    background-image: url(../Pictures/landing-page/gaming2.jpg);
 }
 
 body {
@@ -17,6 +16,7 @@ body {
     --purple-transparent: rgba(81, 26, 183, 0.685);
     --purple-transparent-dark: rgba(81, 26, 183, 0.596);
     --green-transparent: rgba(132, 248, 157, 0.4);
+    
     
    
     font-family: 'Roboto Mono', monospace;
@@ -29,16 +29,16 @@ body {
     align-items: center;
 }
 
-img {
-    position: fixed;
-    top: 0;
-    left: 0;
+.bg {
+    background-image:
+    linear-gradient(to bottom, rgba(38, 119, 51, 0.418), rgba(81, 26, 183, 0.76)),
+    url('../Pictures/landing-page/gamingdudes.jpg');
+    background-size: cover;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-  
-  }
+    height: 100vh;
+    z-index: -2;
+    position: fixed;;
+}
 
   .s1 {
       display: flex;
