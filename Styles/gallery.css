@@ -1,9 +1,9 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-  
+
 body {
     display: flex;
     flex-direction: column;
@@ -13,29 +13,25 @@ body {
     align-items: center;
     --main-color: #511AB7;
     --green: #1BFD9C;
-    --transparent-background: linear-gradient(to right,rgba(27, 253, 156, 0.1),transparent,transparent,rgba(27, 253, 156, 0.1));
+    --transparent-background: linear-gradient(to right, rgba(27, 253, 156, 0.1), transparent, transparent, rgba(27, 253, 156, 0.1));
     --purple-transparent: rgba(81, 26, 183, 0.4);
 
 }
 
-  
 
 .background-image {
-    position: absolute;
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 100vh;
-    max-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(38, 119, 51, 0.418), rgba(81, 26, 183, 0.76)), url('../Pictures/gallery-photos/gaming-team.jpg');
+    position: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
     z-index: -1;
     top: 0;
-    object-fit: cover;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     overflow: hidden;
-    border-bottom: 4px solid;
-    color: var(--green);
-    
+   
 }
 
 .icons-container {
@@ -63,7 +59,6 @@ body {
 }
 
 .title-container {
-  
     height: 100vh;
     display: flex;
     align-items: center;
@@ -71,14 +66,78 @@ body {
     color: var(--green);
     font-family: 'Orbitron', sans-serif;
     font-size: 64px;
-
-
 }
 
 h1 {
     margin: 0;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 200px 300px;
+    grid-gap: 20px;
+    grid-auto-flow: dense;
+    margin: 10%;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.gallery-item .image{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery-item .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    cursor: pointer;
+
+}
+.height-1 {
+    grid-row: span 1;
+}
+
+.height-2 {
+    grid-row: span 2;
+}
+
+.height-3 {
+    grid-row: span 3;
+}
+
+.width-1 {
+    grid-column: span 1;
+}
+
+.width-2 {
+    grid-column: span 2;
+}
+
+.width-3 {
+    grid-column: span 3;
+}
+
+.width-4 {
+    grid-column: span 4;
+}
+
+.width-5 {
+    grid-column: span 5;
+}
+
+
+
+
+
+/*
 .image-container {
     display: flex;
     justify-content: space-around;
@@ -98,7 +157,7 @@ h1 {
     margin-bottom: 20px;
    
 }
-
+/*
 
   
 
