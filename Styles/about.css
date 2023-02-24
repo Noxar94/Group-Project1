@@ -11,6 +11,8 @@ display: flex;
 justify-content: center;
 flex-direction: column;
 font-family: 'Cinzel', serif;
+--main-color: #511AB7;
+
   
 }
 
@@ -38,6 +40,11 @@ font-family: 'Cinzel', serif;
   z-index: -1;
   object-fit: cover;
   align-items: center;
+  --main-color: #511AB7;
+    --green: #1BFD9C;
+    --transparent-background: linear-gradient(to right, rgba(27, 253, 156, 0.1), transparent, transparent, rgba(27, 253, 156, 0.1));
+    --purple-transparent: rgba(81, 26, 183, 0.4);
+    --purple-solid: rgba(81, 26, 183, 0.9);
   
 }
 
@@ -91,10 +98,8 @@ main {
   flex-wrap: wrap;
   position: relative;
   
-  
-  background-color: rgba(39, 37, 37, 0.4);
-  box-shadow: 0px 0px 50px #511ab7;
   margin-top: 3%;
+  margin-bottom: 3%;
   overflow: hidden;
 }
 
@@ -114,8 +119,8 @@ main {
   position: absolute;
   color: white;
   display: inline-block;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   opacity: 0%; 
   transform: translateX(-300px);
   
@@ -146,9 +151,9 @@ main {
   justify-content: space-between;
   padding-right: 350px;
   align-items: center;
-  color: blueviolet;
+  color: #511ab7;
   margin-left: 30px;
-
+  
 
 }
 
