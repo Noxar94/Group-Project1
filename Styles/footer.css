@@ -1,7 +1,6 @@
 #logo {
-  width: 90px;
-  height: 90px;
-
+  width: 4em;
+  height: 4em;
 }
 
 .footer-container {
@@ -17,17 +16,12 @@
   padding-right: 10%;
   background: var(--purple-transparent);
   box-shadow: inset 0 0 10px rgba(4, 230, 72, 0.795), 0 0 9px 3px rgba(27, 253, 102, 0.767);
-  border-radius: 0.6em;
   font-family: 'Roboto Mono', monospace;
-  
 }
 .footer-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
-  
-  
 }
 
 .footer-box ul {
@@ -50,12 +44,5 @@ padding: 10px;
 }
 
 .footer-box a:hover {
-  
-  color:#511ab7;
-  transition: 1s;
-  cursor: pointer;
-  background-color: rgb(255, 255, 255,0.4);
-  border-radius: 50px;
-
-
+  color: rgba(97, 255, 145, 0.795);
 }
