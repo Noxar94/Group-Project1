@@ -16,8 +16,6 @@ body {
     --purple-transparent: rgba(81, 26, 183, 0.281);
     --purple-transparent-dark: rgba(81, 26, 183, 0.267);
     --green-transparent: rgba(132, 248, 157, 0.4);
-    
-    
    
     font-family: 'Roboto Mono', monospace;
     text-shadow: 1px 1px var(--main-color);
@@ -75,7 +73,6 @@ body {
 
 .icons-container i:hover {
     color: var(--purple-transparent);
-    -webkit-text-stroke: 1px var(--green);
 }
 
 .icons-container i:active {
@@ -135,7 +132,7 @@ body {
 
    
 
-   /*FORM*/
+   /*----------------FORM---------------*/
 
 form {
     height: 500px;
@@ -223,6 +220,12 @@ button:hover{
     color: var(--green);
 }
 
+/*----------------MEDIA QUERY---------------*/
+
+@media (max-width: 950px) {
+    
+  }
+  
 
 
   
